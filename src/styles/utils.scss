@@ -1,0 +1,35 @@
+// TEXT
+
+.bold-text {
+  font-weight: bold;
+}
+
+.light-text {
+  font-weight: 200;
+}
+
+.reg-text {
+  font-weight: 400;
+}
+
+// FLEX
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.heading {
+  text-align: center;
+  font-size: var(--global-header-size);
+  margin-bottom: 50px;
+  padding-top: 10px;
+}
+
+.section {
+  padding: 40px 0;
+}
