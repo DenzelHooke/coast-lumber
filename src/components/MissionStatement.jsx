@@ -1,6 +1,7 @@
 import React from "react";
 import { BsCashCoin, BsTree, BsHouseDoor } from "react-icons/bs";
 import MissionItem from "./MissionItem";
+import Image from "next/image";
 
 const MissionStatement = () => {
   return (
@@ -9,7 +10,13 @@ const MissionStatement = () => {
         <h2 id="bold-statement" className="reg-text">
           Making a <span className="bold-text">difference</span>
         </h2>
-        <img src="/assets/rectangle_7.svg" id="statement-underline" />
+        <Image
+          width={450}
+          height={11}
+          src="/assets/rectangle_7.svg"
+          id="statement-underline"
+          alt=""
+        />
       </div>
 
       <ul className="flex mission-items-wrapper">
