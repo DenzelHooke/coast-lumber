@@ -3,6 +3,7 @@ import { useRef, useEffect } from "react";
 import MissionStatement from "@/components/MissionStatement";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -11,13 +12,37 @@ export default function Home() {
         <div className="intro-container">
           <div className="global-container">
             <div className="intro">
-              <div ref={logoRef} className="intro-image-container">
+              <motion.div
+                className="intro-image-container"
+                drag
+                animate={{
+                  opacity: 100,
+                }}
+                initial={{
+                  opacity: 0,
+                }}
+                transition={{
+                  duration: 3,
+                }}
+              >
                 <img src="coast_lumber_logo.png" />
-              </div>
-              <p className="message">
+              </motion.div>
+              <motion.p
+                className="message"
+                animate={{
+                  opacity: 100,
+                }}
+                initial={{
+                  opacity: 0,
+                }}
+                transition={{
+                  duration: 3,
+                  delay: 2,
+                }}
+              >
                 Serving Lower Mainland BC builders, contractors & developers
                 with lumber & building supplies since 1954
-              </p>
+              </motion.p>
             </div>
           </div>
         </div>
