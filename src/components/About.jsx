@@ -21,7 +21,7 @@ const About = () => {
             offering eco-friendly solutions and supporting local initiatives. By
             staying true to these values, Coast Lumber sets the standard for
             dependable and ethical building supply solutions, upholding the
-            family's legacy of providing quality service and products.
+            family&apos;s legacy of providing quality service and products.
           </p>
         </div>
       </div>
