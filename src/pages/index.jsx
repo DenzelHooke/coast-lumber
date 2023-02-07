@@ -4,6 +4,7 @@ import MissionStatement from "@/components/MissionStatement";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -25,7 +26,12 @@ export default function Home() {
                   duration: 3,
                 }}
               >
-                <img src="coast_lumber_logo.png" />
+                <Image
+                  src="/coast_lumber_logo.png"
+                  alt="logo"
+                  width={900}
+                  height={500}
+                />
               </motion.div>
               <motion.p
                 className="message"

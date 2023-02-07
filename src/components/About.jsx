@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -6,7 +7,12 @@ const About = () => {
       <div className="global-container">
         <h2 className="heading reg-text">ABOUT US</h2>
         <div className="flex content-wrapper">
-          <img src="/assets/family_photo.jpg" />
+          <Image
+            alt="family photo"
+            width={600}
+            height={400}
+            src="/assets/family_photo.jpg"
+          />
           <p>
             Coast Lumber, established in 1954 in Surrey BC by a family of six,
             has a rich heritage of providing building supplies to the local

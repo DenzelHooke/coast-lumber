@@ -5,7 +5,13 @@ const Navbar = () => {
   return (
     <div id="navbar">
       <div className="logo-contrainer">
-        <img src="/coast_lumber_logo.png" className="logo" />
+        <Image
+          src="/coast_lumber_logo.png"
+          className="logo"
+          alt="logo"
+          width={150}
+          height={100}
+        />
       </div>
       <ul className="navigation-links">
         <a href="#">HOME</a>
