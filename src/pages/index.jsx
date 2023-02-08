@@ -15,7 +15,6 @@ export default function Home() {
             <div className="intro">
               <motion.div
                 className="intro-image-container"
-                drag
                 animate={{
                   opacity: 100,
                 }}

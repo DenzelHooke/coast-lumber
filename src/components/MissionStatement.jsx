@@ -11,8 +11,11 @@ const MissionStatement = () => {
           Making a <span className="bold-text">difference</span>
         </h2>
         <Image
-          width={450}
+          width={300}
           height={11}
+          sizes="
+          (max-width: 450px),
+          "
           src="/assets/rectangle_7.svg"
           id="statement-underline"
           alt=""
