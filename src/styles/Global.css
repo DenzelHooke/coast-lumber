@@ -59,7 +59,7 @@ ul {
 }
 
 #navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 1000;
   width: 100%;
@@ -84,7 +84,28 @@ ul {
   align-items: flex-end;
 }
 #navbar .navigation-links li {
+  position: relative;
   color: var(--global-white);
+}
+#navbar .navigation-links li::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background: rgb(255, 255, 255);
+  width: 0;
+  height: 1px;
+  animation: underline;
+}
+@keyframes underline {
+  from {
+    width: 0;
+    visibility: visible;
+  }
+  to {
+    width: 100%;
+    visibility: visible;
+  }
 }
 
 .intro-container {
@@ -113,17 +134,18 @@ ul {
   display: flex;
   justify-content: center;
 }
-.intro-container .intro {
-  margin-top: 100px;
-}
 .intro-container .intro .message {
   color: var(--global-white);
   max-width: 65%;
   margin-top: 30px;
 }
-.intro-container .intro .intro-image-container img {
+.intro-container .intro .intro-image-container {
   max-width: 830px;
   max-height: 300px;
+}
+.intro-container .intro .intro-image-container img {
+  width: 100%;
+  height: 100%;
 }
 
 .mission-statement {
@@ -232,11 +254,6 @@ ul {
   background-image: url("https://images.unsplash.com/photo-1630272908311-9b5e042164be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80");
 }
 
-@media screen and (max-width: 1400px) {
-  .intro {
-    scale: 0.85;
-  }
-}
 @media screen and (max-width: 1330px) {
   .mission-items-wrapper {
     justify-content: center;
@@ -290,12 +307,6 @@ ul {
 .logo {
   width: 200px;
   height: 68px;
-}
-
-.global-container {
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 #navbar {
@@ -354,12 +365,8 @@ ul {
 }
 .intro-container .intro .message {
   color: var(--global-white);
-  max-width: 65%;
+  max-width: 70%;
   margin-top: 30px;
-}
-.intro-container .intro .intro-image-container img {
-  max-width: 830px;
-  max-height: 300px;
 }
 
 .mission-statement {
@@ -413,7 +420,7 @@ ul {
   max-width: 800px;
   align-self: center;
   line-height: 40px;
-  padding: 5px 20px;
+  padding: 5px 0;
   font-size: var(--global-font-size);
 }
 .about-index .content-wrapper img {
@@ -468,49 +475,9 @@ ul {
   background-image: url("https://images.unsplash.com/photo-1630272908311-9b5e042164be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80");
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   .intro {
-    scale: 0.85;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .intro {
-    scale: 0.75;
-  }
-}
-@media screen and (max-width: 700px) {
-  .intro .message {
-    max-width: 100% !important;
-  }
-  .intro img {
-    max-width: 500px !important;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .mission-statement .statement-wrapper #statement-underline {
-    max-width: 300px;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-}
-@media screen and (max-width: 500px) {
-  #navbar .navigation-links {
-    display: none;
-  }
-}
-@media screen and (max-width: 400px) {
-  .intro img {
-    max-width: 350px !important;
-    height: 200px;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  #bold-statement {
-    font-size: 30px;
-    padding: 10px;
-  }
-  .mission-items-wrapper {
-    margin-top: 30px;
+    max-width: 700px;
   }
 }
 @media screen and (max-width: 1330px) {
@@ -519,5 +486,38 @@ ul {
   }
   .about-index .content-wrapper img {
     width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .intro {
+    max-width: 600px;
+  }
+  .intro .message {
+    max-width: 80% !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mission-statement .statement-wrapper #statement-underline {
+    max-width: 300px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media screen and (max-width: 600px) {
+  .intro .message {
+    font-size: 15px;
+    max-width: 100% !important;
+  }
+  #navbar .navigation-links {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  #bold-statement {
+    font-size: 30px;
+    padding: 10px;
+  }
+  .mission-items-wrapper {
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=Global.css.map */

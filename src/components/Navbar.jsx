@@ -14,10 +14,18 @@ const Navbar = () => {
         />
       </div>
       <ul className="navigation-links">
-        <a href="#">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">SERVICES</a>
-        <a href="#">CONTACT</a>
+        <li>
+          <a href="#">HOME</a>
+        </li>
+        <li>
+          <a href="#">ABOUT</a>
+        </li>
+        <li>
+          <a href="#">SERVICES</a>
+        </li>
+        <li>
+          <a href="#">CONTACT</a>
+        </li>
       </ul>
     </div>
   );
