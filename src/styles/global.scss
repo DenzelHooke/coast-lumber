@@ -332,6 +332,7 @@ ul {
     width: 100%;
 
     ul {
+      flex-wrap: wrap;
       li {
         margin: 0 30px;
         font-weight: 500;
@@ -383,6 +384,30 @@ ul {
   #navbar {
     .navigation-links {
       display: none !important;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mission-statement {
+    .statement-wrapper {
+      #statement-underline {
+        width: 80%;
+      }
+
+      #bold-statement {
+        padding-left: 0;
+      }
+      margin-bottom: 50px;
+    }
+  }
+
+  #footer {
+    ul {
+      li {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
     }
   }
 }

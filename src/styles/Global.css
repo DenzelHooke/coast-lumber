@@ -279,6 +279,9 @@ ul {
   justify-content: center;
   width: 100%;
 }
+#footer .footer-navigation-wrapper ul {
+  flex-wrap: wrap;
+}
 #footer .footer-navigation-wrapper ul li {
   margin: 0 30px;
   font-weight: 500;
@@ -312,5 +315,20 @@ ul {
 @media screen and (max-width: 600px) {
   #navbar .navigation-links {
     display: none !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mission-statement .statement-wrapper {
+    margin-bottom: 50px;
+  }
+  .mission-statement .statement-wrapper #statement-underline {
+    width: 80%;
+  }
+  .mission-statement .statement-wrapper #bold-statement {
+    padding-left: 0;
+  }
+  #footer ul li {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }/*# sourceMappingURL=Global.css.map */
