@@ -19,20 +19,6 @@ $My-Color-Theme-3-hex: #4d331f;
 $My-Color-Theme-4-hex: #1f8b99;
 $My-Color-Theme-5-hex: #1f474d;
 
-/* Color Theme Swatches in RGBA */
-$My-Color-Theme-1-rgba: rgba(153, 92, 46, 1);
-$My-Color-Theme-2-rgba: rgba(153, 110, 77, 1);
-$My-Color-Theme-3-rgba: rgba(77, 51, 31, 1);
-$My-Color-Theme-4-rgba: rgba(31, 139, 153, 1);
-$My-Color-Theme-5-rgba: rgba(31, 71, 77, 1);
-
-/* Color Theme Swatches in HSLA */
-$My-Color-Theme-1-hsla: hsla(25, 53, 39, 1);
-$My-Color-Theme-2-hsla: hsla(26, 33, 45, 1);
-$My-Color-Theme-3-hsla: hsla(26, 42, 21, 1);
-$My-Color-Theme-4-hsla: hsla(186, 66, 36, 1);
-$My-Color-Theme-5-hsla: hsla(187, 42, 21, 1);
-
 $transition-time: 200ms;
 * {
   margin: 0;
@@ -389,6 +375,14 @@ ul {
 
     .contact-info {
       margin-bottom: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #navbar {
+    .navigation-links {
+      display: none !important;
     }
   }
 }

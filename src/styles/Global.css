@@ -12,8 +12,6 @@
 }
 
 /* Color Theme Swatches in Hex */
-/* Color Theme Swatches in RGBA */
-/* Color Theme Swatches in HSLA */
 * {
   margin: 0;
   padding: 0;
@@ -309,5 +307,10 @@ ul {
   }
   .footer-inner-wrapper .contact-info {
     margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #navbar .navigation-links {
+    display: none !important;
   }
 }/*# sourceMappingURL=Global.css.map */
