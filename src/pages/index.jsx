@@ -27,6 +27,7 @@ export default function Home() {
               >
                 <Image
                   src="/coast_lumber_logo.png"
+                  className="logo"
                   alt="logo"
                   width={900}
                   height={500}

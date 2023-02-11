@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="logo-contrainer">
         <Image
           src="/coast_lumber_logo.png"
-          className="logo"
+          className="small-logo"
           alt="logo"
           width={150}
           height={100}

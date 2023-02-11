@@ -7,8 +7,13 @@
   --dark-black: #131313;
   --global-header-size: 35px;
   --global-font-size: 18px;
+  --footer-bg: rgb(222, 222, 222);
+  --navbar-bg: black;
 }
 
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +51,7 @@ ul {
   list-style: none;
 }
 
-.logo {
+.small-logo {
   width: 200px;
   height: 68px;
 }
@@ -68,8 +73,7 @@ ul {
   padding: 0 var(--root-padding);
   padding-top: 40px;
   padding-bottom: 10px;
-  background-color: rgb(255, 255, 255);
-  border-bottom: 2px solid white;
+  background-color: var(--navbar-bg);
 }
 #navbar .logo-contrainer {
   height: 100%;
@@ -95,7 +99,7 @@ ul {
   background: rgb(255, 255, 255);
   width: 0;
   height: 1px;
-  transition: all 1s ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 #navbar .navigation-links li:hover::after {
   width: 100%;
@@ -145,10 +149,6 @@ ul {
 .intro-container .intro .intro-image-container {
   max-width: 830px;
   max-height: 300px;
-}
-.intro-container .intro .intro-image-container img {
-  width: 100%;
-  height: 100%;
 }
 
 .mission-statement {
@@ -257,6 +257,38 @@ ul {
   background-image: url("https://images.unsplash.com/photo-1630272908311-9b5e042164be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80");
 }
 
+#footer {
+  padding: var(--root-padding);
+  padding-top: 20px;
+  min-height: 150px;
+  background-color: var(--footer-bg);
+  color: var(--dark-black);
+  margin-top: 100px;
+}
+#footer * {
+  color: var(--dark-black);
+}
+#footer p {
+  margin-top: 80px;
+  text-align: center;
+}
+#footer .footer-inner-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#footer .footer-navigation-wrapper {
+  justify-content: center;
+  width: 100%;
+}
+#footer .footer-navigation-wrapper ul li {
+  margin: 0 30px;
+  font-weight: 500;
+}
+#footer .image-container {
+  max-width: 120px;
+}
+
 @media screen and (max-width: 1500px) {
   .about-index .content-wrapper {
     justify-content: space-evenly;
@@ -264,9 +296,18 @@ ul {
 }
 @media screen and (max-width: 1330px) {
   .mission-items-wrapper {
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .about-index .content-wrapper img {
     width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .footer-inner-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-inner-wrapper .contact-info {
+    margin-bottom: 80px;
   }
 }/*# sourceMappingURL=Global.css.map */
