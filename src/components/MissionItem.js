@@ -14,8 +14,7 @@ const MissionItem = ({ title, icon, content }) => {
       opacity: isInView ? 100 : 0,
       y: "0px",
       transition: {
-        duration: 1,
-        delay: 1,
+        duration: 1.8,
       },
     },
   };
