@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
         <div className="flex footer-navigation-wrapper">
           <ul className="flex ">
             <li className="external">
-              <a href="/">HOME</a>
+              <Link href="/">HOME</Link>
             </li>
             <li className="external">
               <a href="#">ABOUT</a>
@@ -28,7 +29,7 @@ const Footer = () => {
               <a href="#">SERVICES</a>
             </li>
             <li className="external">
-              <a href="">CONTACT</a>
+              <a href="#">CONTACT</a>
             </li>
           </ul>
         </div>
