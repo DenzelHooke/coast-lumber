@@ -330,8 +330,8 @@ ul {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: red;
-  height: 2px;
+  background: #1f8b99;
+  height: 4px;
 }
 .team-info-wrappper .employee-container {
   justify-content: center;

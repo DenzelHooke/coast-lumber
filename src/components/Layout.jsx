@@ -10,6 +10,7 @@ const Layout = ({ children }) => {
         {children}
         <Footer />
       </div>
+      {/* Created with love by Denzel Hooke */}
     </>
   );
 };

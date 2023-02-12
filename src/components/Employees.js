@@ -77,13 +77,14 @@ const Employees = () => {
           </h2>
         </div>
         <div className="employee-container flex flex-wrap">
-          {data.map((employee) => (
+          {data.map((employee, i) => (
             <Employee
               firstname={employee.first_name}
               lastname={employee.last_name}
               bio={employee.bio}
               position={employee.position}
               email={employee.email}
+              key={i}
             />
           ))}
         </div>

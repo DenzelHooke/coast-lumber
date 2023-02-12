@@ -4,7 +4,7 @@ import Employees from "../components/Employees";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
-const about = () => {
+const About = () => {
   const ref = useRef();
   const pageVariants = {
     hidden: {
@@ -36,12 +36,12 @@ const about = () => {
               <p className="about-text">
                 As a family of 6 builders, we started Coast Lumber with the goal
                 of providing high-quality building materials and exceptional
-                service. Our hard work and dedication have paid off, and we're
-                proud to say that we've created a successful family business.
-                We're passionate about what we do and are committed to
-                maintaining our reputation for quality and reliability. Every
-                project we work on is a testament to our love for the trade and
-                our commitment to excellence.
+                service. Our hard work and dedication have paid off, and
+                we&apos;re proud to say that we&apos;ve created a successful
+                family business. We&apos;re passionate about what we do and are
+                committed to maintaining our reputation for quality and
+                reliability. Every project we work on is a testament to our love
+                for the trade and our commitment to excellence.
               </p>
             </div>
             <div className="image-container">
@@ -60,4 +60,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
