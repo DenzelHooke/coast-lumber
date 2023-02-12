@@ -289,6 +289,30 @@ ul {
   max-width: 120px;
 }
 
+#about-page-wrapper .intro {
+  padding: 40px 0;
+  margin-bottom: 100px;
+}
+#about-page-wrapper .intro .flex {
+  padding-top: 40px;
+  justify-content: center;
+  gap: 20px;
+}
+#about-page-wrapper .intro .flex .about-text-container {
+  max-width: 600px;
+}
+#about-page-wrapper .intro .flex .about-text-container .about-text {
+  margin-top: auto;
+}
+#about-page-wrapper .intro .flex .image-container {
+  flex-grow: 100;
+  max-width: 500px;
+}
+#about-page-wrapper .intro .flex .image-container img {
+  height: 100%;
+  width: 100%;
+}
+
 @media screen and (max-width: 1500px) {
   .about-index .content-wrapper {
     justify-content: space-evenly;

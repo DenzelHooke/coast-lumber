@@ -342,6 +342,37 @@ ul {
   }
 }
 
+// About page
+
+#about-page-wrapper {
+  .intro {
+    padding: 40px 0;
+    margin-bottom: 100px;
+    .flex {
+      padding-top: 40px;
+      justify-content: center;
+      gap: 20px;
+      .about-text-container {
+        max-width: 600px;
+
+        .about-text {
+          // Pushes text down to bottom of container
+          margin-top: auto;
+        }
+      }
+
+      .image-container {
+        flex-grow: 100;
+        max-width: 500px;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1500px) {
   .about-index {
     .content-wrapper {

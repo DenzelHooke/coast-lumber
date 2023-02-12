@@ -23,6 +23,10 @@
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .heading {
   text-align: center;
   font-size: var(--global-header-size);
@@ -54,4 +58,8 @@
 
 .white-text {
   color: var(--global-white) !important;
+}
+
+.center-text {
+  text-align: center;
 }
