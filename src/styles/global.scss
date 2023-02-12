@@ -4,12 +4,13 @@
   --global-flat-black: #2b2b2b;
   --root-padding: 20px;
   --global-bg-black: #131313;
-  --global-white: #ffffff;
+  --global-white: #f1f1f1;
   --dark-black: #131313;
   --global-header-size: 35px;
   --global-font-size: 18px;
   --footer-bg: rgb(222, 222, 222);
   --navbar-bg: black;
+  --light-text-color: rgb(187, 187, 187);
 }
 
 /* Color Theme Swatches in Hex */
@@ -342,7 +343,7 @@ ul {
   }
 }
 
-// About page
+// ABOUT PAGE
 
 #about-page-wrapper {
   .intro {
@@ -368,6 +369,52 @@ ul {
           height: 100%;
           width: 100%;
         }
+      }
+    }
+  }
+}
+
+.team-info-wrappper {
+  .header-wrapper {
+    margin-top: 160px;
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 30px;
+      position: relative;
+      width: auto;
+      display: inline;
+      &::after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: red;
+        height: 2px;
+      }
+    }
+  }
+
+  .employee-container {
+    justify-content: center;
+    padding: 5px 0;
+    padding-bottom: 100px;
+    .employee-item {
+      max-width: 250px;
+      margin: 30px 20px;
+      .immediate-info {
+        margin-bottom: 10px;
+        line-height: 23px;
+      }
+
+      .employee-name {
+        font-weight: 500;
+        font-size: large;
+      }
+
+      .position {
+        color: var(--light-text-color);
       }
     }
   }

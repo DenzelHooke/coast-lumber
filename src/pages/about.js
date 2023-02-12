@@ -1,10 +1,30 @@
 import React from "react";
 import Image from "next/image";
 import Employees from "../components/Employees";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 const about = () => {
+  const ref = useRef();
+  const pageVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 100,
+      transition: {
+        duration: 0.2,
+      },
+    },
+  };
   return (
-    <div id="about-page-wrapper">
+    <motion.div
+      id="about-page-wrapper"
+      ref={ref}
+      variants={pageVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <div className="global-container">
         <div className="intro">
           <h1 className="heading reg-text center-text bold">
@@ -36,7 +56,7 @@ const about = () => {
         </div>
       </div>
       <Employees />
-    </div>
+    </motion.div>
   );
 };
 

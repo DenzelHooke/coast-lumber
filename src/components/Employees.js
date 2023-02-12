@@ -6,7 +6,7 @@ const Employees = () => {
     {
       first_name: "Jennifer",
       last_name: "Smith",
-      bio: "Proud to carry the family legacy forward with innovation and stride.",
+      bio: "Honoured to lead Coast Lumber in giving back, respecting the environment, and upholding values through hard work.",
       position: "Vice President",
       get email() {
         return `${this.first_name}.${this.last_name}@coastlumber.com`;
@@ -71,9 +71,11 @@ const Employees = () => {
   return (
     <div className="team-info-wrappper">
       <div className="global-container">
-        <h2 className="center-text reg-text">
-          Meet the <span className="bold">Team</span>
-        </h2>
+        <div className="center-text header-wrapper">
+          <h2 className="center-text reg-text">
+            Meet the <span className="bold">Team</span>
+          </h2>
+        </div>
         <div className="employee-container flex flex-wrap">
           {data.map((employee) => (
             <Employee
