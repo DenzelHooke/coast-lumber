@@ -19,17 +19,25 @@ const Footer = () => {
         </div>
         <div className="flex footer-navigation-wrapper">
           <ul className="flex ">
-            <li className="external">
-              <Link href="/">HOME</Link>
+            <li>
+              <Link className="external" href="/">
+                HOME
+              </Link>
             </li>
-            <li className="external">
-              <a href="#">ABOUT</a>
+            <li>
+              <Link className="external" href="/about">
+                ABOUT
+              </Link>
             </li>
-            <li className="external">
-              <a href="#">SERVICES</a>
+            <li>
+              <Link className="external" href="#">
+                SERVICES
+              </Link>
             </li>
-            <li className="external">
-              <a href="#">CONTACT</a>
+            <li>
+              <Link className="external" href="#">
+                CONTACT
+              </Link>
             </li>
           </ul>
         </div>

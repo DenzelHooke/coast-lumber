@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const MissionStatement = () => {
   return (
-    <section className="mission-statement global-container section">
+    <section className="mission-statement global-container section dark-black-bg white-text">
       <div className="statement-wrapper">
-        <h2 id="bold-statement" className="reg-text">
+        <h2 id="bold-statement" className="reg-text white-text">
           Making a <span className="bold-text">difference</span>
         </h2>
         <Image

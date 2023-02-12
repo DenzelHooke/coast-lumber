@@ -30,7 +30,7 @@ $transition-time: 200ms;
 html,
 body {
   scroll-behavior: smooth;
-  background-color: var(--dark-black);
+  background-color: var(--global-white);
 }
 
 img {
@@ -44,7 +44,7 @@ h4,
 h5,
 h6,
 p {
-  color: var(--globa-white);
+  color: var(--dark-black);
 }
 
 a {
@@ -91,7 +91,7 @@ ul {
 
   .navigation-links {
     display: flex;
-    max-width: 500px;
+    max-width: 350px;
     flex-grow: 1000;
     justify-content: space-between;
     align-items: flex-end;
@@ -176,9 +176,7 @@ ul {
 // Mission statement
 
 .mission-statement {
-  * > {
-  }
-  color: white !important;
+  color: var(--global-white) !important;
 
   .statement-wrapper {
     h2 {
@@ -388,7 +386,16 @@ ul {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
+  .about-index {
+    .content-wrapper {
+      p {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
   .mission-statement {
     .statement-wrapper {
       #statement-underline {

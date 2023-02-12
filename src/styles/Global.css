@@ -22,7 +22,7 @@
 html,
 body {
   scroll-behavior: smooth;
-  background-color: var(--dark-black);
+  background-color: var(--global-white);
 }
 
 img {
@@ -37,7 +37,7 @@ h4,
 h5,
 h6,
 p {
-  color: var(--globa-white);
+  color: var(--dark-black);
 }
 
 a {
@@ -80,7 +80,7 @@ ul {
 }
 #navbar .navigation-links {
   display: flex;
-  max-width: 500px;
+  max-width: 350px;
   flex-grow: 1000;
   justify-content: space-between;
   align-items: flex-end;
@@ -150,7 +150,7 @@ ul {
 }
 
 .mission-statement {
-  color: white !important;
+  color: var(--global-white) !important;
 }
 .mission-statement .statement-wrapper h2 {
   font-size: var(--global-header-size);
@@ -317,7 +317,11 @@ ul {
     display: none !important;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
+  .about-index .content-wrapper p {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .mission-statement .statement-wrapper {
     margin-bottom: 50px;
   }

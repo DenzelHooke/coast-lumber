@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 const Navbar = () => {
   return (
-    <div id="navbar">
+    <div id="navbar" className="">
       <div className="logo-contrainer">
         <Image
           src="/coast_lumber_logo.png"
@@ -15,16 +15,16 @@ const Navbar = () => {
       </div>
       <ul className="navigation-links">
         <li>
-          <a href="#">HOME</a>
+          <Link href="/">HOME</Link>
         </li>
         <li>
-          <a href="#">ABOUT</a>
+          <Link href="/about">ABOUT</Link>
         </li>
         <li>
-          <a href="#">SERVICES</a>
+          <Link href="#">SERVICES</Link>
         </li>
         <li>
-          <a href="#">CONTACT</a>
+          <Link href="#">CONTACT</Link>
         </li>
       </ul>
     </div>

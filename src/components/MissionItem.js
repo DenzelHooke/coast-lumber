@@ -24,9 +24,9 @@ const MissionItem = ({ title, icon, content }) => {
         <div className="mission-item">
           <div className="icon-wrap">
             {icon}
-            <h4>{title}</h4>
+            <h4 className="white-text">{title}</h4>
           </div>
-          <p>{content}</p>
+          <p className="white-text">{content}</p>
         </div>
       </motion.li>
     </>
