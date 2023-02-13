@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="nav-mobile-btn">X</div>
+      {/* <div className="nav-mobile-btn">X</div> */}
       <div id="navbar" className="">
         <div className="logo-contrainer">
           <Image
