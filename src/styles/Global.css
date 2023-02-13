@@ -323,6 +323,7 @@ ul {
   position: relative;
   width: auto;
   display: inline;
+  color: var(--dark-black);
 }
 .team-info-wrappper .header-wrapper h2::after {
   content: "";
@@ -377,6 +378,9 @@ ul {
   }
 }
 @media screen and (max-width: 600px) {
+  #navbar {
+    justify-content: center;
+  }
   #navbar .navigation-links {
     display: none !important;
   }
