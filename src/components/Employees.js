@@ -7,7 +7,7 @@ const Employees = () => {
       first_name: "Jennifer",
       last_name: "Smith",
       bio: "Honoured to lead Coast Lumber in giving back, respecting the environment, and upholding values through hard work.",
-      position: "Vice President",
+      position: "Owner",
       get email() {
         return `${this.first_name}.${this.last_name}@coastlumber.com`;
       },
@@ -16,7 +16,7 @@ const Employees = () => {
       first_name: "Thomas",
       last_name: "Smith",
       bio: "Proud to carry the family legacy forward with innovation and stride.",
-      position: "CEO",
+      position: "Owner",
       get email() {
         return `${this.first_name}.${this.last_name}@coastlumber.com`;
       },
@@ -39,15 +39,7 @@ const Employees = () => {
         return `${this.first_name}.${this.last_name}@coastlumber.com`;
       },
     },
-    {
-      first_name: "Matthew",
-      last_name: "Johnson",
-      bio: "Experienced in construction and sales, providing exceptional customer service to clients",
-      position: "Contract Sales",
-      get email() {
-        return `${this.first_name}.${this.last_name}@coastlumber.com`;
-      },
-    },
+
     {
       first_name: "David",
       last_name: "Chen",
@@ -57,15 +49,15 @@ const Employees = () => {
         return `${this.first_name}.${this.last_name}@coastlumber.com`;
       },
     },
-    {
-      first_name: "Emily",
-      last_name: "Chen",
-      bio: "Detail-oriented expert in doors and windows, passionate about improving homes.",
-      position: "Doors and Windows Specialist",
-      get email() {
-        return `${this.first_name}.${this.last_name}@coastlumber.com`;
-      },
-    },
+    // {
+    //   first_name: "Emily",
+    //   last_name: "Chen",
+    //   bio: "Detail-oriented expert in doors and windows, passionate about improving homes.",
+    //   position: "Doors and Windows Specialist",
+    //   get email() {
+    //     return `${this.first_name}.${this.last_name}@coastlumber.com`;
+    //   },
+    // },
   ];
 
   return (
