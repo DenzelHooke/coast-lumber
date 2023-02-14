@@ -28,6 +28,10 @@ $transition-time: 200ms;
   font-family: "Jost";
 }
 
+#comment {
+  display: none;
+}
+
 html,
 body {
   scroll-behavior: smooth;
