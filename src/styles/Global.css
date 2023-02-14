@@ -62,7 +62,7 @@ ul {
 }
 
 #navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   width: 100%;
@@ -114,7 +114,7 @@ ul {
   justify-content: center;
   position: relative;
   z-index: 100;
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 30px;
 }
 .intro-container:before {
@@ -377,7 +377,7 @@ ul {
     margin-bottom: 80px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
   #navbar {
     justify-content: center;
   }
