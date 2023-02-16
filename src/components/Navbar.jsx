@@ -51,7 +51,7 @@ const Navbar = () => {
   return (
     <>
       <div className="nav-mobile-btn">X</div>
-      <motion.div
+      <motion.nav
         id="navbar"
         className=""
         variants={navbarVariant}
@@ -81,7 +81,7 @@ const Navbar = () => {
             <Link href="#">CONTACT</Link>
           </li>
         </motion.ul>
-      </motion.div>
+      </motion.nav>
     </>
   );
 };

@@ -70,7 +70,7 @@ ul {
   top: 0;
   z-index: 1000;
   width: 100%;
-  max-height: 118px;
+  min-height: 118px;
   display: flex;
   justify-content: space-between;
   padding: 0 var(--root-padding);
@@ -123,6 +123,8 @@ ul {
 
 .intro-container {
   padding: 10px;
+  padding-top: 160px;
+  padding-bottom: 30px;
   display: flex;
   min-height: 100vh;
   background-image: url("/forest_backdrop.jpg");
@@ -131,8 +133,6 @@ ul {
   justify-content: center;
   position: relative;
   z-index: 100;
-  padding-top: 280px;
-  padding-bottom: 30px;
 }
 .intro-container:before {
   content: "";
@@ -307,6 +307,9 @@ ul {
   max-width: 120px;
 }
 
+#about-page-wrapper {
+  margin-top: 120px;
+}
 #about-page-wrapper .intro {
   padding: 40px 0;
   margin-bottom: 100px;
@@ -373,8 +376,16 @@ ul {
 }
 
 @media screen and (max-width: 1500px) {
+  .about-index .intro {
+    max-width: 720px;
+  }
   .about-index .content-wrapper {
     justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .intro {
+    max-width: 600px;
   }
 }
 @media screen and (max-width: 1330px) {
@@ -396,10 +407,28 @@ ul {
 }
 @media screen and (max-width: 660px) {
   #navbar {
+    height: auto;
+    min-height: auto;
+    max-height: auto;
+    padding: 10px 20px;
+    display: flex;
     justify-content: center;
   }
+  #navbar .logo-contrainer {
+    display: none;
+  }
   #navbar .navigation-links {
-    display: none !important;
+    width: 100% !important;
+    max-width: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .intro-container .intro .message {
+    max-width: 90%;
+    font-size: 15px;
+  }
+  #about-page-wrapper {
+    margin-top: 60px;
   }
 }
 @media screen and (max-width: 480px) {
