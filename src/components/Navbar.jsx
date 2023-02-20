@@ -5,22 +5,55 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [displayNav, setDisplayNav] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+  const _mobile_page_width = 660;
+  let oldScrollVal;
+
+  const navbarDisplay = () => {
+    if (isMobile) {
+      setDisplayNav(true);
+      return;
+    }
+    console.log("MOBILE: ", isMobile, "\n");
+    const newScrollVal = window.pageYOffset;
+
+    if (newScrollVal > oldScrollVal) {
+      console.log("scrolling down");
+      setDisplayNav(false);
+    } else {
+      setDisplayNav(true);
+      console.log("scrolling up");
+    }
+    oldScrollVal = newScrollVal;
+  };
+
+  const onResize = () => {
+    checkIsMobile();
+  };
+
+  const checkIsMobile = () => {
+    if (isMobile) {
+      setDisplayNav(true);
+      return;
+    }
+    const bodyScrollWidth = document.body.scrollWidth;
+    if (bodyScrollWidth <= _mobile_page_width) {
+      setIsMobile(true);
+      console.log("Is mobile");
+    } else {
+      setIsMobile(false);
+      console.log("Not Mobile");
+    }
+  };
 
   useEffect(() => {
-    let oldScrollVal;
-    window.addEventListener("scroll", () => {
-      const newScrollVal = window.pageYOffset;
-
-      if (newScrollVal > oldScrollVal) {
-        console.log("scrolling down");
-        setDisplayNav(false);
-      } else {
-        setDisplayNav(true);
-        console.log("scrolling up");
-      }
-      oldScrollVal = newScrollVal;
-    });
+    checkIsMobile();
+    window.addEventListener("resize", onResize);
   }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", navbarDisplay);
+  }, [isMobile]);
 
   const navbarVariant = {
     // initial: {
