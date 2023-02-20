@@ -4,7 +4,7 @@ import Employee from "./Employee";
 const Employees = () => {
   const data = [
     {
-      first_name: "Jennifer",
+      first_name: "Jaime",
       last_name: "Smith",
       bio: "Honoured to lead Coast Lumber in giving back, respecting the environment, and upholding values through hard work.",
       position: "Owner",
@@ -49,15 +49,15 @@ const Employees = () => {
         return `${this.first_name}.${this.last_name}@coastlumber.com`;
       },
     },
-    // {
-    //   first_name: "Emily",
-    //   last_name: "Chen",
-    //   bio: "Detail-oriented expert in doors and windows, passionate about improving homes.",
-    //   position: "Doors and Windows Specialist",
-    //   get email() {
-    //     return `${this.first_name}.${this.last_name}@coastlumber.com`;
-    //   },
-    // },
+    {
+      first_name: "Jap",
+      last_name: "Brar",
+      bio: "Jap Brar may be slow, but he keeps the floors clean at night - that's what counts.",
+      position: "Janitorial Specialist",
+      get email() {
+        return `${this.first_name}.${this.last_name}@coastlumber.com`;
+      },
+    },
   ];
 
   return (
