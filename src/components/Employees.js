@@ -49,15 +49,15 @@ const Employees = () => {
         return `${this.first_name}.${this.last_name}@coastlumber.com`;
       },
     },
-    {
-      first_name: "Jap",
-      last_name: "Brar",
-      bio: "Jap Brar may be slow, but he keeps the floors clean at night - that's what counts.",
-      position: "Janitorial Specialist",
-      get email() {
-        return `${this.first_name}.${this.last_name}@coastlumber.com`;
-      },
-    },
+    // {
+    //   first_name: "Jap",
+    //   last_name: "Brar",
+    //   bio: "Jap Brar may be slow, but he keeps the floors clean at night - that's what counts.",
+    //   position: "Janitorial Specialist",
+    //   get email() {
+    //     return `${this.first_name}.${this.last_name}@coastlumber.com`;
+    //   },
+    // },
   ];
 
   return (
